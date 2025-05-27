@@ -17,7 +17,7 @@
         <link rel="next" href="../logs/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/logo-auto.svg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
@@ -100,8 +100,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../../.." title="Strands Agents SDK" class="md-header__button md-logo" aria-label="Strands Agents SDK" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../../assets/logo-light.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -328,8 +327,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="Strands Agents SDK" class="md-nav__button md-logo" aria-label="Strands Agents SDK" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../../assets/logo-light.svg" alt="logo">
 
     </a>
     Strands Agents SDK
@@ -894,6 +892,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../concepts/model-providers/llamaapi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LlamaAPI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../concepts/model-providers/ollama/" class="md-nav__link">
         
   
@@ -917,12 +938,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/model-providers/llamaapi/" class="md-nav__link">
+      <a href="../../concepts/model-providers/openai/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    LlamaAPI
+    OpenAI
     
   </span>
   
@@ -2970,7 +2991,7 @@
 <p>Common visualization options include:</p>
 <ol>
 <li><strong>Jaeger</strong>: Open-source, end-to-end distributed tracing</li>
-<li><strong>Langfuse</strong>: For Traces, evals, prompt management and metrics</li>
+<li><strong>Langfuse</strong>: For Traces, evals, prompt management, and metrics</li>
 <li><strong>AWS X-Ray</strong>: For AWS-based applications</li>
 <li><strong>Zipkin</strong>: Lightweight distributed tracing</li>
 </ol>
@@ -2994,7 +3015,7 @@ docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </sp
 </code></pre></div>
 <p>Then access the Jaeger UI at http://localhost:16686 to view your traces.</p>
 <p>You can also enable console export to inspect the spans:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># By enabling the enviorment variable</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># By enabling the environment variable</span>
 <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;STRANDS_OTEL_ENABLE_CONSOLE_EXPORT&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;true&quot;</span>
 
 <span class="c1"># or</span>

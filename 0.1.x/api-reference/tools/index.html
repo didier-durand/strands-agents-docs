@@ -17,7 +17,7 @@
         <link rel="next" href="../types/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/logo-auto.svg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
@@ -100,8 +100,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Strands Agents SDK" class="md-header__button md-logo" aria-label="Strands Agents SDK" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../assets/logo-light.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -328,8 +327,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Strands Agents SDK" class="md-nav__button md-logo" aria-label="Strands Agents SDK" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../assets/logo-light.svg" alt="logo">
 
     </a>
     Strands Agents SDK
@@ -886,6 +884,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../user-guide/concepts/model-providers/llamaapi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LlamaAPI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../user-guide/concepts/model-providers/ollama/" class="md-nav__link">
         
   
@@ -909,12 +930,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../user-guide/concepts/model-providers/llamaapi/" class="md-nav__link">
+      <a href="../../user-guide/concepts/model-providers/openai/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    LlamaAPI
+    OpenAI
     
   </span>
   
@@ -6042,7 +6063,7 @@ as SDK tools.</p>
 <span class="sd">    Raises:</span>
 <span class="sd">        InvalidToolUseNameException: If the tool name is invalid.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="c1"># We need to fix some typing here, because we dont actually expect a ToolUse, but dict[str, Any]</span>
+    <span class="c1"># We need to fix some typing here, because we don&#39;t actually expect a ToolUse, but dict[str, Any]</span>
     <span class="k">if</span> <span class="s2">&quot;name&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">tool</span><span class="p">:</span>
         <span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;tool name missing&quot;</span>  <span class="c1"># type: ignore[unreachable]</span>
         <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>

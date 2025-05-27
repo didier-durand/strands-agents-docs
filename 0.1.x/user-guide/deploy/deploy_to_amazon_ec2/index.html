@@ -17,7 +17,7 @@
         <link rel="next" href="../../../examples/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/logo-auto.svg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
@@ -100,8 +100,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../../.." title="Strands Agents SDK" class="md-header__button md-logo" aria-label="Strands Agents SDK" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../../assets/logo-light.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -328,8 +327,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="Strands Agents SDK" class="md-nav__button md-logo" aria-label="Strands Agents SDK" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../../assets/logo-light.svg" alt="logo">
 
     </a>
     Strands Agents SDK
@@ -894,6 +892,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../concepts/model-providers/llamaapi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LlamaAPI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../concepts/model-providers/ollama/" class="md-nav__link">
         
   
@@ -917,12 +938,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/model-providers/llamaapi/" class="md-nav__link">
+      <a href="../../concepts/model-providers/openai/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    LlamaAPI
+    OpenAI
     
   </span>
   
@@ -2538,7 +2559,7 @@
 <span class="w">   </span><span class="nx">associatePublicIpAddress</span><span class="o">:</span><span class="w"> </span><span class="kt">true</span><span class="p">,</span><span class="w"> </span><span class="c1">// Assign a public IP address</span>
 <span class="w"> </span><span class="p">});</span>
 </code></pre></div>
-<p>For EC2 deployment, the application code and dependencies are packaged separately and uploaded to S3 as assets, During instance initialization, both packages are downloaded and extracted to the appropriate locations and then configured to run as linux service:</p>
+<p>For EC2 deployment, the application code and dependencies are packaged separately and uploaded to S3 as assets. During instance initialization, both packages are downloaded and extracted to the appropriate locations and then configured to run as a Linux service:</p>
 <div class="highlight"><pre><span></span><code><span class="w"> </span><span class="c1">// Create user data script to set up the application</span>
 <span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">userData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">ec2</span><span class="p">.</span><span class="nx">UserData</span><span class="p">.</span><span class="nx">forLinux</span><span class="p">();</span>
 <span class="w"> </span><span class="nx">userData</span><span class="p">.</span><span class="nx">addCommands</span><span class="p">(</span>
